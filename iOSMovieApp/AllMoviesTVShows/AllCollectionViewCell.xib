@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AllCollectionViewCell" id="gTV-IL-0wX" customClass="AllCollectionViewCell" customModule="iOSMovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="370"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="370"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0kn-QW-OMw">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="288"/>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0kn-QW-OMw" secondAttribute="height" multiplier="25:36" id="ju8-w4-23P"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugl-Tg-xPZ">
+                        <rect key="frame" x="10" y="293" width="180" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6EX-CG-vAV"/>
+                            <constraint firstAttribute="width" constant="180" id="iDq-ox-G4t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.035294117649999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-KG-3cT">
+                        <rect key="frame" x="150" y="316" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="fI5-Xw-teN"/>
+                            <constraint firstAttribute="height" constant="40" id="xUy-oB-VcI"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.035294117649999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                        <connections>
+                            <action selector="shareContent:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Cpo-jc-L37"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUH-NX-pOm">
+                        <rect key="frame" x="110" y="318" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Jsf-lh-fo3"/>
+                            <constraint firstAttribute="width" constant="40" id="fnv-NG-udb"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.035294117649999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                        <connections>
+                            <action selector="favoriteButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="55i-hd-eD1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-Ol-0wW">
+                        <rect key="frame" x="10" y="328" width="46" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="BOe-pR-XjS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.035294117649999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="1" green="0.88109240700000002" blue="0.45663128689999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0kn-QW-OMw" secondAttribute="trailing" id="15R-Ox-qvx"/>
+                <constraint firstItem="0kn-QW-OMw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1zY-s7-S40"/>
+                <constraint firstItem="pzd-Ol-0wW" firstAttribute="top" secondItem="ugl-Tg-xPZ" secondAttribute="bottom" constant="10" id="BJe-jR-Dq3"/>
+                <constraint firstItem="ugl-Tg-xPZ" firstAttribute="top" secondItem="0kn-QW-OMw" secondAttribute="bottom" constant="5" id="CGS-SN-vJ5"/>
+                <constraint firstAttribute="trailing" secondItem="LxN-KG-3cT" secondAttribute="trailing" constant="10" id="IeU-jB-Llc"/>
+                <constraint firstItem="0kn-QW-OMw" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="dI8-Rn-OPX"/>
+                <constraint firstItem="LxN-KG-3cT" firstAttribute="leading" secondItem="UUH-NX-pOm" secondAttribute="trailing" id="dny-Qh-49Q"/>
+                <constraint firstItem="0kn-QW-OMw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gVV-ao-Jh3"/>
+                <constraint firstItem="pzd-Ol-0wW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="iKg-MW-7cw"/>
+                <constraint firstItem="UUH-NX-pOm" firstAttribute="top" secondItem="0kn-QW-OMw" secondAttribute="bottom" constant="30" id="teb-cw-gY7"/>
+                <constraint firstItem="LxN-KG-3cT" firstAttribute="top" secondItem="0kn-QW-OMw" secondAttribute="bottom" constant="28" id="u6Y-4s-1w9"/>
+                <constraint firstItem="ugl-Tg-xPZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="vlT-qy-8Im"/>
+            </constraints>
+            <size key="customSize" width="200" height="370"/>
+            <connections>
+                <outlet property="favouriteButton" destination="UUH-NX-pOm" id="Jpm-mW-cpO"/>
+                <outlet property="movieImage" destination="0kn-QW-OMw" id="LoC-2W-eLM"/>
+                <outlet property="movieRatings" destination="pzd-Ol-0wW" id="JGz-33-PW8"/>
+                <outlet property="movieTitle" destination="ugl-Tg-xPZ" id="6y0-CR-gep"/>
+                <outlet property="shareButton" destination="LxN-KG-3cT" id="9fR-hs-hH6"/>
+            </connections>
+            <point key="canvasLocation" x="-166.66666666666669" y="126.5625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
+</document>

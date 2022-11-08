@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3N-Lt-L33">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="NxD-XP-eyP">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn-movie-time-513" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-Y5-xjC">
+                                <rect key="frame" x="323" y="82" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="G5d-iO-fxT"/>
+                                    <constraint firstAttribute="height" constant="250" id="hpb-o2-Jmd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q7g-CA-Sba"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NxD-XP-eyP" firstAttribute="centerX" secondItem="v3N-Lt-L33" secondAttribute="centerX" id="IE4-ge-qNx"/>
+                            <constraint firstItem="KKd-Y5-xjC" firstAttribute="centerX" secondItem="v3N-Lt-L33" secondAttribute="centerX" id="KPX-KD-oBY"/>
+                            <constraint firstItem="Q7g-CA-Sba" firstAttribute="trailing" secondItem="NxD-XP-eyP" secondAttribute="trailing" id="QO7-lP-qKa"/>
+                            <constraint firstItem="NxD-XP-eyP" firstAttribute="centerY" secondItem="v3N-Lt-L33" secondAttribute="centerY" id="V5I-wI-NFP"/>
+                            <constraint firstItem="KKd-Y5-xjC" firstAttribute="centerY" secondItem="v3N-Lt-L33" secondAttribute="centerY" id="bfd-Lq-YBV"/>
+                            <constraint firstItem="NxD-XP-eyP" firstAttribute="top" secondItem="v3N-Lt-L33" secondAttribute="top" id="eYK-R8-7sq"/>
+                            <constraint firstAttribute="trailing" secondItem="NxD-XP-eyP" secondAttribute="trailing" id="hyg-Ff-qlQ"/>
+                            <constraint firstItem="NxD-XP-eyP" firstAttribute="leading" secondItem="v3N-Lt-L33" secondAttribute="leading" id="ohx-RM-I1A"/>
+                            <constraint firstItem="NxD-XP-eyP" firstAttribute="leading" secondItem="Q7g-CA-Sba" secondAttribute="leading" id="wrT-I4-muz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hyg-Ff-qlQ"/>
+                                <exclude reference="ohx-RM-I1A"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="QO7-lP-qKa"/>
+                                <include reference="hyg-Ff-qlQ"/>
+                                <include reference="ohx-RM-I1A"/>
+                                <exclude reference="wrT-I4-muz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="320" height="568"/>
+        <image name="popcorn-movie-time-513" width="170.5" height="170.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
